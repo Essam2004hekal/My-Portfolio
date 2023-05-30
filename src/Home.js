@@ -182,12 +182,12 @@ const Home = () => {
         
          <div className="col-lg-6 col-md-12 col-sm-12">
 
-          <div className="skills-left" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
+          <div className="skills-left" data-aos="fade-down" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
 
             <div className="skills">
                 <div className="details">
                   <span>HTML</span>
-                  <span>95%</span>
+                  <span className='num'>95%</span>
                 </div>
                 <div className="bar">
                    <div id="html-bar" />
@@ -197,7 +197,7 @@ const Home = () => {
               <div className="skills">
                 <div className="details">
                   <span>CSS</span>
-                  <span>85%</span>
+                  <span className='num'>85%</span>
                 </div>
                 <div className="bar">
                    <div id="css-bar" />
@@ -207,7 +207,7 @@ const Home = () => {
               <div className="skills">
                 <div className="details">
                   <span>Javascript</span>
-                  <span>70%</span>
+                  <span className='num'>70%</span>
                 </div>
                 <div className="bar">
                    <div id="javascript-bar" />
@@ -222,12 +222,12 @@ const Home = () => {
 
          <div className="col-lg-6 col-md-12 col-sm-12">
 
-          <div className="skills-right" data-aos="fade-left" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
+          <div className="skills-right" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
 
             <div className="skills">
                 <div className="details">
                   <span>Bootstrap</span>
-                  <span>95%</span>
+                  <span className='num'>95%</span>
                 </div>
                 <div className="bar">
                    <div id="bootstrap-bar" />
@@ -236,7 +236,7 @@ const Home = () => {
             <div className="skills">
                 <div className="details">
                   <span>React Js</span>
-                  <span>75%</span>
+                  <span className='num'>75%</span>
                 </div>
                 <div className="bar">
                    <div id="react-bar" />
@@ -245,7 +245,7 @@ const Home = () => {
             <div className="skills">
                 <div className="details">
                   <span>Sass</span>
-                  <span>75%</span>
+                  <span className='num'>75%</span>
                 </div>
                 <div className="bar">
                    <div id="sass-bar" />
