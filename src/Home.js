@@ -62,7 +62,7 @@ const Home = () => {
         </p>
         <div className="btn-box">
         <HashLink className="btn" to="/#contact">Contact</HashLink>
-          <a href="" className="btn">My CV</a>
+         <a href="CV\_Essam_Hekal___Resume_30-05-2023-01-00-34.pdf" target="_blank" className="btn">My CV</a>
         </div>
     </div>
   
