@@ -252,6 +252,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .right-banner {
+    text-align: center;
+  }
+
+  .right-banner img {
+    width: 200px;
+    margin-top: -900px;
+    margin-left: 270px;
+  }
+}
 @media only screen and (max-width: 700px) {
   .right-banner {
     text-align: center;
@@ -263,6 +274,26 @@ body {
     margin-left: 270px;
   }
 }
+@media only screen and (max-width: 337px) {
+  body {
+   
+  }
+
+  .num {
+    margin-right: 190px;
+  }
+
+  .right-banner img {
+    width: 160px;
+    margin-top: -1000px;
+    margin-left: 140px;
+  }
+
+  #myBtn {
+    margin-right: 190px;
+  }
+}
+
 
 /* <!-- ======================== End Home =============================== --> */
 
@@ -421,7 +452,7 @@ body {
 @media only screen and (max-width: 700px) {
   .about-left {
     text-align: center;
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .about h1 {
@@ -438,9 +469,12 @@ body {
     font-size: 13px;
     margin-top: -20px;
   } 
+
+  .about-personal-info {
+    font-size: 11px;
+  }
   
 }
-
 
 
 /* <!-- ======================== End About =============================== --> */
