@@ -39,7 +39,7 @@ const Home = () => {
 
 
 
- {/* start bannerr */}
+ {/* start banner */}
  <section className="banner" id='home'>
 <Container>
 <Row>
