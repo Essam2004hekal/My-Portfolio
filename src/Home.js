@@ -11,6 +11,8 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+
+import pdf from './CV/_Essam_Hekal___Resume_30-05-2023-01-00-34.pdf'
 import banerr  from './img/web-development.png'
 import about from './img/about-image.jpg'
 import proj from './img/portfolio.png'
@@ -41,7 +43,7 @@ const Home = () => {
  <section className="banner" id='home'>
 <Container>
 <Row>
-<Col md={6} sm={7}>
+<Col md={6} sm={6}>
     <div className="left-banner">
         <h5>
         Hello, I am
@@ -49,7 +51,7 @@ const Home = () => {
 
 
         <h1>
-        Essam <span style={{ color: "#f8af12" }}>Hekal</span> 
+       Essam <span style={{ color: "#f8af12" }}>Hekal</span> 
         </h1>
 
         <h3>
@@ -62,14 +64,14 @@ const Home = () => {
         </p>
         <div className="btn-box">
         <HashLink className="btn" to="/#contact">Contact</HashLink>
-         <a href="CV\_Essam_Hekal___Resume_30-05-2023-01-00-34.pdf" target="_blank" className="btn">My CV</a>
+          <a href={pdf} target="_blank" className="btn">My CV</a>
         </div>
     </div>
   
 </Col>
 
 
-<Col md={6} sm={7}>
+<Col md={6} sm={6}>
     <div className="right-banner">
         <img src={banerr} width="400px" alt="" />
     </div>
@@ -103,7 +105,7 @@ const Home = () => {
          
          <Col md={5} sm={12}>
 
-         <div className="about-left" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+         <div className="about-left" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
          <div className="boxes">
           <div className="cont"><img src={about} />
             <h2>Essam Hekal <br /><span> Front-End Developer</span></h2><HashLink to="/#contact" id='link'>HIRE ME</HashLink>
@@ -115,7 +117,7 @@ const Home = () => {
 
 
          <Col md={7} sm={12}>
-         <div className="about-right" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+         <div className="about-right" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
             <h2>About Me</h2>
             <br />
             <p>I'm Skilled Front-End Web Developer With Experience In JavaScript <br />
@@ -166,105 +168,74 @@ const Home = () => {
 
 {/* Start skills */}
 <section className="skills-sec" id='skills'> 
-    <div className="container">
+    <Col className="container">
       <div data-aos="fade-down" data-aos-duration="600" data-aos-delay="500">
       <h1>My Skills</h1>
-       <p>I'm looking forward to enhancing my skills through working in challengable projects with a professional team, <br />
+       <p className='head-skill'>I'm looking forward to enhancing my skills through working in challengable projects with a professional team, <br />
          I depend mostly on self-learning to gain new skills</p>
         </div>
         <br />
         <br />
-        <br />
-        <br />
         
-       <div className="row">
-
         
-         <div className="col-lg-6 col-md-12 col-sm-12">
+      
+           <div className='row'>
+        
 
-          <div className="skills-left" data-aos="fade-down" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
 
-            <div className="skills">
-                <div className="details">
-                  <span>HTML</span>
-                  <span className='num'>95%</span>
-                </div>
-                <div className="bar">
-                   <div id="html-bar" />
-                </div>
-              </div>
+         <Col md={6} sm={12}>
+          <div className="skills-left" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
 
-              <div className="skills">
-                <div className="details">
-                  <span>CSS</span>
-                  <span className='num'>85%</span>
+          <p className='head-bar'>HTML</p>
+                  <div className="container">
+                 <div className="skills html">90%</div>
+                   </div>
+                   <br />
+        
+                     <p className='head-bar'>CSS</p>
+                  <div className="container">
+                  <div className="skills css">80%</div>
                 </div>
-                <div className="bar">
-                   <div id="css-bar" />
-                </div>
-              </div>
-
-              <div className="skills">
-                <div className="details">
-                  <span>Javascript</span>
-                  <span className='num'>70%</span>
-                </div>
-                <div className="bar">
-                   <div id="javascript-bar" />
-                </div>
-              </div>
+                <br />
+        
+                   <p className='head-bar'>JavaScript</p>
+               <div className="container">
+                 <div className="skills js">65%</div>
+                 </div>
 
           </div>
-
-         </div>  
-
+          </Col>
 
 
-         <div className="col-lg-6 col-md-12 col-sm-12">
 
+
+          
+          <Col md={6} sm={12}>
           <div className="skills-right" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-sine">
-
-            <div className="skills">
-                <div className="details">
-                  <span>Bootstrap</span>
-                  <span className='num'>95%</span>
+               <p className='head-bar'>Bootstrap</p>
+               <div className="container">
+               <div className="skills html">90%</div>
                 </div>
-                <div className="bar">
-                   <div id="bootstrap-bar" />
-                </div>
-              </div>
-            <div className="skills">
-                <div className="details">
-                  <span>React Js</span>
-                  <span className='num'>75%</span>
-                </div>
-                <div className="bar">
-                   <div id="react-bar" />
-                </div>
-              </div>
-            <div className="skills">
-                <div className="details">
-                  <span>Sass</span>
-                  <span className='num'>75%</span>
-                </div>
-                <div className="bar">
-                   <div id="sass-bar" />
-                </div>
-              </div>
+                <br />
+              <p className='head-bar'>Sass</p>
+               <div className="container">
+               <div className="skills css">80%</div>
+               </div>
+               <br />
+                     <p className='head-bar'>React JS</p>
+              <div className="container">
+                 <div className="skills js">65%</div>
+                    </div>
+           
 
           </div>
+          </Col>
 
-         </div>
+         
+          </div>
 
-
-
-    </div>
-        
-
-
-
-
-    </div>
+         
+         </Col> 
  </section>
 {/* End skills */}
 
@@ -287,7 +258,7 @@ const Home = () => {
   <br />
   <div className="row">
     <div className="column">
-      <div className="card" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+      <div className="card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
         <div className="icon-wrapper">
           <i className="fas fa-laptop-code" />
         </div>
@@ -299,7 +270,7 @@ const Home = () => {
       </div>
     </div>
     <div className="column">
-      <div className="card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500">
+      <div className="card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
         <div className="icon-wrapper">
           <i className="fas fa-brush" />
         </div>
@@ -311,7 +282,7 @@ const Home = () => {
       </div>
     </div>
     <div className="column">
-      <div className="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+      <div className="card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
         <div className="icon-wrapper">
           <i className="fas fa-mobile-screen-button" />
         </div>
@@ -323,7 +294,7 @@ const Home = () => {
       </div>
     </div>
     <div className="column">
-      <div className="card" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+      <div className="card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
         <div className="icon-wrapper">
           <i className="fas fa-user-tie" />
         </div>
@@ -347,7 +318,7 @@ const Home = () => {
       </div>
     </div>
     <div className="column">
-      <div className="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+      <div className="card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
         <div className="icon-wrapper">
           <i className="fas fa-code" />
         </div>
@@ -392,21 +363,21 @@ const Home = () => {
 
       <div className="contents">
 
-        <div className="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+        <div className="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
            <h4>2022 - 2023</h4>
            <h3>High School Degree</h3>
            <p>Faculty Of Arts <br/><br /> Monofia University<br/><br />
            First grade </p>
         </div>
 
-        <div className="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+        <div className="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
            <h4>2018 - 2022</h4>
            <h3>Bachelor's Degree</h3>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             repellendus reprehenderit commodi facilis aut ipsum! </p>
        </div>
 
-       <div className="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+       <div className="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
          <h4>2018 - 2022</h4>
          <h3>Master Degree</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -436,20 +407,20 @@ const Home = () => {
   
         <div className="contents">
   
-          <div className="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+          <div className="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
              <h4>2022 - 2023</h4>
              <h3>Front End Developer</h3>
              <p>Front-End Developer with 1+ Years of experience <br/> of website development.  By learning from <br /> free courses on YouTube and then<br /> participating in paid training courses</p>
           </div>
   
-          <div className="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+          <div className="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
              <h4>2018 - 2022</h4>
              <h3>Front End Developer</h3>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               repellendus reprehenderit commodi facilis aut ipsum! </p>
          </div>
   
-         <div className="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+         <div className="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
            <h4>2018 - 2022</h4>
            <h3>Front End Developer</h3>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
